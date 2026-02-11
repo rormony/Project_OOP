@@ -89,16 +89,16 @@ public class Main {
         Customer customer1 = new Customer(name, phoneNumber, false);
 
         if(customer1.member(secretCodeInput)){
-            System.out.println("Welcome back, " + customer1.name + "! You are a verified member.");
-            customer1.isMember = true;
+            System.out.println("Welcome back, " + customer1.getName() + "! You are a verified member.");
+            customer1.setIsMember(true);
         } else {
-            System.out.println("Hello, " + customer1.name + ". You are not a member.");
+            System.out.println("Hello, " + customer1.getName() + ". You are not a member.");
         }
 
         System.out.println("\nCustomer Details:");
-        System.out.println("Name: " + customer1.name);
-        System.out.println("Phone: " + customer1.phoneNumber);
-        System.out.println("Is Member: " + customer1.isMember);
+        System.out.println("Name: " + customer1.getName());
+        System.out.println("Phone: " + customer1.getPhoneNumber());
+        System.out.println("Is Member: " + customer1.isIsMember());
 
 
         System.out.println("Enter movie ID you want to watch: ");
@@ -110,7 +110,7 @@ public class Main {
             return; 
        }
 
-        System.out.println("You selected: " + selectedMovie.title);
+        System.out.println("You selected: " + selectedMovie.getTitle());
     }
              
 

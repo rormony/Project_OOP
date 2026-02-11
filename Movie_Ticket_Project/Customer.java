@@ -10,7 +10,8 @@
  * @author USER
  */
 public class Customer {
-
+    
+    private int customerId;
     private String name;
     private String phoneNumber;
     private boolean isMember;
@@ -20,6 +21,7 @@ public class Customer {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.isMember = isMember;
+        this.customerId = totalCustomers + 1;
         totalCustomers++;
     }
     public Customer(){
@@ -30,7 +32,9 @@ public class Customer {
 
     }
 
-  
+   public int getCustomerId() {
+        return customerId;
+    }   
 
     public String getName() {
         return name;
