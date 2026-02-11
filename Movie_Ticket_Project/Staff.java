@@ -25,17 +25,11 @@ public class Staff {
         return staffID;
     }
 
-    public void setStaffID(int staffID) {
-        this.staffID = staffID;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    
 
     public double getSalary() {
         return salary;
@@ -49,8 +43,6 @@ public class Staff {
         return position;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
+    
 
 }
