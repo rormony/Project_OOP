@@ -13,7 +13,7 @@ public class Cinema {
     Ticket[] tickets;
     Customer[] customers;
     BuyTicket[] buyTickets;
-    String name;
+    private String name;
     int menuCount=0;
 
 
@@ -49,6 +49,18 @@ public class Cinema {
         }
         return null; 
     }
+
+    public void printTickets(){
+        System.out.println("Tickets : "+ name);
+        for (int i = 0; i<menuCount; i++){
+            System.out.println("Ticket ID: "+ tickets[i].getTicketId() + ", Movie: "+ tickets[i].getMovie().getTitle() + ", Price: " + tickets[i].getPriceSnapshot() + ", Ticket Type: " + tickets[i].getTicketType());
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
 
 }
 
